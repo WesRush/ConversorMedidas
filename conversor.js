@@ -1,13 +1,14 @@
 let valor = parseFloat(prompt("Digite um valor em metros:"))
+
 let medida = prompt(`Escolha a opção para converter ${valor}M
 a. milímetro (mm)
 b. centímetro (cm)
 c. decímetro (dm)
 d. decâmetro (dam)
 e. hectômetro (hm)
-f. quilômetro (km) `)
+f. quilômetro (km)`)
 
-switch(parseFloat(medida)){
+switch(medida){
     case "a": 
     alert(`${valor}M em milímetros é de ${valor*1000}mm`)
     break
@@ -27,5 +28,5 @@ switch(parseFloat(medida)){
     alert(`${valor}M em quilômetro é de ${valor/1000}km`)
     break
     default:
-        alert("Opção inválida")
+    alert("Entradas incorretas... finalizando!")
 }
